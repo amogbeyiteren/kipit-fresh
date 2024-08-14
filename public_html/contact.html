@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="zxx" class="no-js">
+  <head>
+    <!-- Mobile Specific Meta -->
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <!-- Favicon-->
+    <link rel="icon" href="img/LOGO.svg" type="image/svg+xml">
+    <!-- Author Meta -->
+    <meta name="author" content="colorlib" />
+    <!-- Meta Description -->
+    <meta name="description" content="" />
+    <!-- Meta Keyword -->
+    <meta name="keywords" content="" />
+    <!-- meta character set -->
+    <meta charset="UTF-8" />
+    <!-- Site Title -->
+    <title>KIPITFRESH</title>
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:100,200,400,300,500,600,700"
+      rel="stylesheet"
+    />
+    <!--
+			CSS
+			============================================= -->
+    <link rel="stylesheet" href="css/linearicons.css" />
+    <link rel="stylesheet" href="css/font-awesome.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link rel="stylesheet" href="css/magnific-popup.css" />
+    <link rel="stylesheet" href="css/nice-select.css" />
+    <link rel="stylesheet" href="css/animate.min.css" />
+    <link rel="stylesheet" href="css/jquery-ui.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <style>
+      .nav-menu a {
+        font-size: 18px; /* Adjust font size as needed */
+        font-weight: 700; /* Makes the font bolder */
+        text-transform: uppercase; /* Makes text clearer and more prominent */
+        letter-spacing: 0.5px; /* Adds spacing between letters for better readability */
+      }
+      .nav-menu a:hover {
+        color: #7ed957; /* Color change on hover for better UX */
+      }
+      /* Ensure the carousel maintains a fixed height */
+      .carousel-inner {
+        height: 500px; /* Adjust the height as needed */
+      }
+
+      /* Make images responsive and ensure they cover the carousel area */
+      .carousel-item img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain; /* Ensure images cover the area without distortion */
+      }
+
+      /* Optional: Adjust carousel height and image behavior for smaller screens */
+      @media (max-width: 768px) {
+        .carousel-inner {
+          height: 300px; /* Adjust height for smaller screens */
+        }
+
+        .carousel-item img {
+          object-fit: cover;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <header id="header">
+      <div class="header-top">
+        <a id="logo-link" href="index.html"
+          ><img id="logo-img" src="img/LOGO.svg" alt="" title=""
+        /></a>
+      </div>
+      <div class="container main-menu">
+        <div class="row align-items-center justify-content-between d-flex">
+          <nav id="nav-menu-container">
+            <ul class="nav-menu">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about.html">About</a></li>
+              <li>
+                <a href="blog-home.html">Blog</a>
+              </li>
+              <li><a class="active" href="contact.html">Contact Us</a></li>
+            </ul>
+          </nav>
+          <!-- #nav-menu-container -->
+        </div>
+      </div>
+    </header>
+    <!-- #header -->
+
+    <!-- start banner Area -->
+    <section class="banner-area half-banner relative about-banner" id="home">
+      <div class="overlay overlay-bg"></div>
+      <div class="container">
+        <div class="row d-flex align-items-center justify-content-center">
+          <div class="about-content col-lg-12">
+            <h1 class="text-white backdrop">Contact Us</h1>
+            <p class="text-white mt-3 backdrop">
+              We're here to help! Reach out to us with any questions, comments,
+              or concerns, and we'll get back to you as soon as possible.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End banner Area -->
+
+    <!-- Start contact-page Area -->
+    <section class="contact-page-area section-gap">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4 d-flex flex-column address-wrap">
+            <div class="single-contact-address d-flex flex-row">
+              <div class="icon">
+                <span class="lnr lnr-home"></span>
+              </div>
+              <div class="contact-details">
+                <h5>Edo Office</h5>
+                <p>Edo Production Centre, Sapele Road Benin City</p>
+              </div>
+            </div>
+            <div class="single-contact-address d-flex flex-row">
+              <div class="icon">
+                <span class="lnr lnr-phone-handset"></span>
+              </div>
+              <div class="contact-details">
+                <h5>(+234) 908 319 8103</h5>
+                <p>Mon. to Sat. 10am to 5pm</p>
+              </div>
+            </div>
+            <div class="single-contact-address d-flex flex-row">
+              <div class="icon">
+                <span class="lnr lnr-envelope"></span>
+              </div>
+              <div class="contact-details">
+                <h5>kipitfresh@outlook.com</h5>
+                <p>Kindly send us your enquiry and feedback</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-8">
+            <form
+              class="form-area contact-form text-right"
+              id="myForm"
+              action="mail.php"
+              method="post"
+            >
+              <div class="row">
+                <div class="col-lg-6 form-group">
+                  <input
+                    name="name"
+                    placeholder="Enter your name"
+                    onfocus="this.placeholder = ''"
+                    onblur="this.placeholder = 'Enter your name'"
+                    class="common-input mb-20 form-control"
+                    required=""
+                    type="text"
+                  />
+
+                  <input
+                    name="email"
+                    placeholder="Enter email address"
+                    pattern="[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{1,63}$"
+                    onfocus="this.placeholder = ''"
+                    onblur="this.placeholder = 'Enter email address'"
+                    class="common-input mb-20 form-control"
+                    required=""
+                    type="email"
+                  />
+
+                  <input
+                    name="subject"
+                    placeholder="Enter subject"
+                    onfocus="this.placeholder = ''"
+                    onblur="this.placeholder = 'Enter subject'"
+                    class="common-input mb-20 form-control"
+                    required=""
+                    type="text"
+                  />
+                </div>
+                <div class="col-lg-6 form-group">
+                  <textarea
+                    class="common-textarea form-control"
+                    name="message"
+                    placeholder="Enter Messege"
+                    onfocus="this.placeholder = ''"
+                    onblur="this.placeholder = 'Enter Messege'"
+                    required=""
+                  ></textarea>
+                </div>
+                <div class="col-lg-12">
+                  <div class="alert-msg" style="text-align: left"></div>
+                  <button class="genric-btn primary" style="float: right">
+                    Send Message
+                  </button>
+                </div>
+              </div>
+            </form>
+          </div>
+          <div class="map-wrap" style="width: 100%; height: 445px" id="">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1986.8468428591053!2d5.621633752145335!3d6.324132362892739!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1040d35388ab8651%3A0xb5f8f2c99dc50ebd!2sEdo%20Production%20Center%2C%20Sapele%20Road%2C%20Benin%20City!5e0!3m2!1sen!2sng!4v1692010073607!5m2!1sen!2sng"
+              width="600"
+              height="450"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End contact-page Area -->
+
+    <!-- start footer Area -->
+    <footer class="footer-area section-gap">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4 col-md-4 col-sm-6">
+            <div class="single-footer-widget">
+              <h6>Quick links</h6>
+              <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contact.html">Contact</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-4 col-sm-6 social-widget">
+            <div class="single-footer-widget">
+              <h6>Follow Us</h6>
+              <p>Socials</p>
+              <div class="footer-social d-flex align-items-center">
+                <a href="../web.facebook.com/KipitfreshAfricac9ef.html"
+                  ><i class="fa fa-facebook"></i
+                ></a>
+                <a href="../x.com/KIPITFRESH_NG.html"
+                  ><i class="fa fa-twitter"></i
+                ></a>
+                <a href="../www.instagram.com/kipitfreshAfrica/index.html"
+                  ><i class="fa fa-instagram"></i
+                ></a>
+                <a href="../www.linkedin.com/kipitfresh.html"
+                  ><i class="fa fa-linkedin"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-4 col-sm-6">
+            <div class="single-footer-widget">
+              <h6>Newsletter</h6>
+              <p>Stay update with our latest</p>
+              <div class="" id="mc_embed_signup">
+                <form
+                  target="_blank"
+                  action="https://spondonit.us12.list-manage.com/subscribe/post?u=1462626880ade1ac87bd9c93a&amp;id=92a4423d01"
+                  method="get"
+                  class="form-inline"
+                >
+                  <input
+                    class="form-control"
+                    name="EMAIL"
+                    placeholder="Enter Email"
+                    onfocus="this.placeholder = ''"
+                    onblur="this.placeholder = 'Enter Email '"
+                    required=""
+                    type="email"
+                  />
+                  <button class="click-btn btn btn-default">
+                    <span class="lnr lnr-arrow-right"></span>
+                  </button>
+                  <div style="position: absolute; left: -5000px">
+                    <input
+                      name="b_36c4fd991d266f23781ded980_aefe40901a"
+                      tabindex="-1"
+                      value=""
+                      type="text"
+                    />
+                  </div>
+
+                  <div class="info"></div>
+                </form>
+              </div>
+            </div>
+          </div>
+          <p class="mt-80 mx-auto footer-text col-lg-12">
+            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+            Copyright &copy;
+            <script>
+              document.write(new Date().getFullYear());
+            </script>
+            All rights reserved @ 2023| This template is made with
+            <i class="fa fa-heart-o" aria-hidden="true"></i> by
+            <a href="../colorlib.com/index.html" target="_blank">Colorlib</a>
+            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+          </p>
+        </div>
+      </div>
+      <img class="footer-bottom" src="#" alt="" />
+    </footer>
+    <!-- End footer Area -->
+    <!-- WhatsApp Button -->
+
+    <a href="https://wa.me/+2349083198103" target="_blank" id="whatsapp-button">
+    </a>
+
+    <script src="js/vendor/jquery-2.2.4.min.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/vendor/bootstrap.min.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBhOdIF3Y9382fqJYt5I_sswSrEw5eihAA"></script>
+    <script src="js/easing.min.js"></script>
+    <script src="js/hoverIntent.js"></script>
+    <script src="js/superfish.min.js"></script>
+    <script src="js/jquery.ajaxchimp.min.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/jquery-ui.js"></script>
+    <script src="js/jquery.nice-select.min.js"></script>
+    <script src="js/mail-script.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

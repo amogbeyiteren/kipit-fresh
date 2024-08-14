@@ -1,0 +1,738 @@
+<!DOCTYPE html>
+<html lang="zxx" class="no-js">
+  <!-- Mirrored from www.kipitfresh.com/ by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 13 Aug 2024 16:21:52 GMT -->
+  <head>
+    <!-- Mobile Specific Meta -->
+
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- Favicon-->
+    <link rel="icon" href="img/LOGO.svg" type="image/svg+xml">
+    <!-- Author Meta -->
+    <meta name="author" content="colorlib" />
+    <!-- Meta Description -->
+    <meta name="description" content="" />
+    <!-- Meta Keyword -->
+    <meta name="keywords" content="" />
+    <!-- meta character set -->
+    <meta charset="UTF-8" />
+    <!-- Site Title -->
+    <title>KIPITFRESH</title>
+
+    <link
+      href="../fonts.googleapis.com/cssff8c.css?family=Poppins:100,200,400,300,500,600,700"
+      rel="stylesheet"
+    />
+    <!--
+			CSS
+			============================================= -->
+    <link rel="stylesheet" href="css/linearicons.css" />
+    <link rel="stylesheet" href="css/font-awesome.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link rel="stylesheet" href="css/magnific-popup.css" />
+    <link rel="stylesheet" href="css/nice-select.css" />
+    <link rel="stylesheet" href="css/animate.min.css" />
+    <link rel="stylesheet" href="css/jquery-ui.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <!-- Custom Styles -->
+    <style>
+      .nav-menu a {
+        font-size: 18px; /* Adjust font size as needed */
+        font-weight: 700; /* Makes the font bolder */
+        text-transform: uppercase; /* Makes text clearer and more prominent */
+        letter-spacing: 0.5px; /* Adds spacing between letters for better readability */
+      }
+      
+      /* Ensure the carousel maintains a fixed height */
+      .carousel-inner {
+        height: 500px; /* Adjust the height as needed */
+      }
+
+      /* Make images responsive and ensure they cover the carousel area */
+      .carousel-item img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain; /* Ensure images cover the area without distortion */
+      }
+
+      /* Optional: Adjust carousel height and image behavior for smaller screens */
+      @media (max-width: 768px) {
+        .carousel-inner {
+          height: 300px; /* Adjust height for smaller screens */
+        }
+
+        .carousel-item img {
+          object-fit: cover;
+        }
+      }
+      /* Styles for the awards and supported by sections */
+      .section-awards img,
+      .section-supported .supported-by-item img {
+        width: 250px; /* Fixed width for consistency */
+        height: 180px; /* Fixed height to match width */
+        object-fit: contain; /* Adjust to cover or contain based on design preference */
+        border-radius: 8px; /* Optional: Rounded corners for images */
+        margin-bottom: 10px; /* Space below images */
+      }
+	  .section-awards strong {
+		font-size: 18px;
+		color: #173e1f;
+
+		
+
+	  }
+
+      .section-supported {
+        padding: 20px;
+        background-color: #f9f9f9; /* Light background for contrast */
+      }
+
+      .section-supported .supported-by-item {
+        text-align: center;
+        margin-bottom: 20px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <header id="header">
+      <div class="header-top">
+        <a id='logo-link' href="index.html"><img id='logo-img' src="img/LOGO.svg" alt="" title="" /></a>
+      </div>
+      <div class="container main-menu">
+        <div class="row align-items-center justify-content-between d-flex">
+          <nav id="nav-menu-container">
+            <ul class="nav-menu">
+              <li ><a  class="active" href="index.html">Home</a></li>
+              <li><a href="about.html">About</a></li>
+              <li>
+                <a href="blog-home.html">Blog</a>
+              </li>
+              <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+          </nav>
+          <!-- #nav-menu-container -->
+        </div>
+      </div>
+    </header>
+    <!-- #header -->
+
+    <!-- start banner Area -->
+    <section class="banner-area full-banner home-banner relative" id="home">
+      <div class="overlay overlay-bg"></div>
+      <div class="container">
+        <div
+          class="row fullscreen d-flex align-items-center justify-content-between"
+        >
+          <div class="banner-content col-lg-6 col-md-6">
+            
+            <h3 class="text-white">I need fresh fruits!</h3>
+            <h2 >
+              Zero Wastage<br />
+              Zero Sorting Time<br />
+              Zero Carbon Emissions<br />
+            </h2>
+            <h3 class="pt-10 pb-10 text-white">
+              Place your orders for fruits directly from the farms to your
+              doorstep.
+            </h3>
+
+            
+          </div>
+          <div class="col-lg-4 col-md-6 header-right">
+            <h4 class="pb-30">Check out our prices</h4>
+            <form class="form" id="fruit-form">
+              <div class="form-group">
+                <div class="default-select fruit-select" id="default-select">
+                  <select>
+                    <option value="" disabled selected hidden>
+                      Select Fruit
+                    </option>
+                    <option value="1">Pineapples</option>
+                    <option value="2">Avocadoes</option>
+                    <option value="3">Plaintain</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <div class="default-select quantity-select" id="default-select">
+                  <select>
+                    <option value="" disabled selected hidden>
+                      Select Quantity
+                    </option>
+                    <option value="1">1 ton</option>
+                    <option value="2">2 tons</option>
+                    <option value="3">3 tons</option>
+                    <option value="3">4 tons</option>
+                    <option value="3">5 tons</option>
+                    <option value="3">6 tons</option>
+                    <option value="3">7 tons</option>
+                    <option value="3">8 tons</option>
+                    <option value="3">9 tons</option>
+                    <option value="3">10 tons</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <div class="default-select destination-select" id="default-select">
+                  <select>
+                    <option value="" disabled selected hidden>
+                      To Destination
+                    </option>
+                    <option value="1">LAGOS</option>
+                    <option value="2">OGUN</option>
+                    <option value="3">ABUJA</option>
+                  </select>
+                </div>
+              </div>
+              <div class="form-group">
+                <div class="input-group dates-wrap">
+                  <input
+                    id="datepicker2"
+                    class="dates form-control"
+                    placeholder="Date & time"
+                    type="text"
+                  />
+                  <div class="input-group-prepend">
+                    <span class="input-group-text"
+                      ><span class="lnr lnr-calendar-full"></span
+                    ></span>
+                  </div>
+                </div>
+              </div>
+              <div class="form-group">
+                <button
+                type="submit"
+                  class="btn btn-default btn-lg btn-block text-center text-uppercase"
+                >
+                  SUBMIT
+                </button>
+              </div>
+            </form>
+            <div id="result-container" style="display: none;">
+              <p class="calculator-output" id="price-per-ton"></p>
+              <p class="calculator-output" id="total-price"></p>
+              <p class="calculator-output" id="transportation"></p>
+              <p class="calculator-output" id="final-total-price"></p>
+              <button id="recalculate-btn" class="btn btn-default btn-lg btn-block text-center text-uppercase">
+                CALCULATE AGAIN
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End banner Area -->
+
+    <!-- Start home-about Area -->
+    <section class="home-about-area section-gap">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-6 about-left">
+            <img class="img-fluid" src="img/Mobile_Reefer3.png" alt="" />
+          </div>
+          <div class="col-lg-6 about-right">
+            <h1>WE PRESERVE FRUITS IN A COOL WAY</h1>
+            <h4>More cool fruits, less wastage</h4>
+            <p>
+              So, we have a built a strong relationship with fruit farmers. We
+              provide them support through trainings, access to market and
+              pay-as-you-go cold storage services.
+            </p>
+            <!-- Update <a class="text-uppercase primary-btn" > Read more </a>-->
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End home-about Area -->
+
+    <!-- Start services Area -->
+    <section class="services-area pb-120">
+      <div class="container">
+        <div class="row section-title">
+          <h1>OUR SERVICES</h1>
+          <p>
+            A team of young people who are deeply passionate about food security
+            and improved nutrition
+          </p>
+        </div>
+        <div class="row">
+          <div class="col-lg-4 single-service">
+            <span class="lnr lnr-briefcase"></span>
+            <a><h4>Cold Storage</h4></a>
+            <p>
+              We provide cold storage for farmers to preserve thier fruits
+              post-harvest.
+            </p>
+          </div>
+          <div class="col-lg-4 single-service">
+            <span class="lnr lnr-car"></span>
+            <a><h4>Cold Distribution</h4></a>
+            <p>
+              We help to distribute fruits from farm to buyers in solar-powered
+              cold-chain trucks
+            </p>
+          </div>
+          <div class="col-lg-4 single-service">
+            <span class="lnr lnr-phone"></span>
+            <a><h4>Data Analytics</h4></a>
+            <p>We analyze demand and supply data for fruit farmers</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End services Area -->
+
+    <!-- Start image-gallery Area -->
+    <section class="image-gallery-area section-gap">
+      <div class="container">
+        <div class="row section-title">
+          <h1>KIPITFRESH IN MOTION</h1>
+          <p>Together, we can reduce post-harvest loss of fruits</p>
+        </div>
+        <div
+          id="carouselExampleIndicators"
+          class="carousel slide"
+          data-ride="carousel"
+        >
+          <ol class="carousel-indicators">
+            <li
+              data-target="#carouselExampleIndicators"
+              data-slide-to="0"
+              class="active"
+            ></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="5"></li>
+          </ol>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img
+                class="d-block w-100 img-fluid"
+                src="img/KIPITFRESHINMOTION/Mobile_reefer4.png"
+                alt="First slide"
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                class="d-block w-100 img-fluid"
+                src="img/KIPITFRESHINMOTION/Pineapples.jpg"
+                alt="Second slide"
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                class="d-block w-100 img-fluid"
+                src="img/KIPITFRESHINMOTION/kipitfreshsolartruck2.jpeg"
+                alt="Third slide"
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                class="d-block w-100 img-fluid"
+                src="img/KIPITFRESHINMOTION/Avocado.jpg"
+                alt="Fourth slide"
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                class="d-block w-100 img-fluid"
+                src="img/KIPITFRESHINMOTION/Fruitcrates.jpg"
+                alt="Fifth slide"
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                class="d-block w-100 img-fluid"
+                src="img/KIPITFRESHINMOTION/plantain.jpg"
+                alt="Sixth slide"
+              />
+            </div>
+          </div>
+          <a
+            class="carousel-control-prev"
+            href="#carouselExampleIndicators"
+            role="button"
+            data-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a
+            class="carousel-control-next"
+            href="#carouselExampleIndicators"
+            role="button"
+            data-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+      </div>
+    </section>
+    <!-- End image-gallery Area -->
+
+    <!-- Start reviews Area -->
+    <section class="reviews-area section-gap">
+      <div class="container">
+        <div class="row section-title">
+          <h1>SUPPORTED BY</h1>
+          <p>We deeply appreciate everyone that has been supportive</p>
+        </div>
+        <div class="row">
+          <div class="col-lg-4 col-md-6">
+            <div class="single-review">
+              <a class="img-gal"
+                ><img
+                  class="img-fluid"
+                  src="img/Partners/rockefellerfoundation.png"
+                  alt=""
+              /></a>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="single-review">
+              <a class="img-gal"
+                ><img id='focused-img' class="img-fluid" src="img/Partners/USADF.png" alt=""
+              /></a>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="single-review">
+              <a class="img-gal"
+                ><img class="img-fluid" src="img/Partners/OCN2.png" alt=""
+              /></a>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="single-review">
+              <div class="single-review">
+                <a class="img-gal"
+                  ><img class="img-fluid" src="img/Partners/LSETF.png" alt=""
+                /></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="single-review">
+              <a class="img-gal"
+                ><img
+                  class="img-fluid"
+                  src="img/Partners/FATEFOUNDATION.png"
+                  alt=""
+              /></a>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="single-review">
+              <a class="img-gal"
+                ><img class="img-fluid" src="img/Partners/JICA.png" alt=""
+              /></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End reviews Area -->
+
+    <!-- Start awards Area -->
+    <div class="container my-5 section-awards">
+      <h1 class="text-center mb-4">AWARDS & RECOGNITIONS</h1>
+      <div class="row">
+        
+        <div class="col-md-4 text-center mb-4">
+          <img
+            src="img/world-lpg-challenge-logo.jpeg"
+            alt="World LPG Challenge'24 Award"
+            class="img-fluid mb-2 awards-item"
+          />
+          <p><strong>World LPG Challenge'24 Award</strong></p>
+          <p>Location: Rome</p>
+        </div>
+		<div class="col-md-4 text-center mb-4">
+			<img
+			  src="img/cop28-logo.jpeg"
+			  alt="COP28 Energy Efficiency Changemaker Award"
+			  class="img-fluid mb-2 awards-item"
+			/>
+			<p><strong>COP28 Energy Efficiency Changemaker Award</strong></p>
+			<p>Location: Dubai</p>
+		  </div>
+        <div class="col-md-4 text-center mb-4">
+          <img
+            src="img/fate-foundation-logo.jpg"
+            alt="Fate Foundation Platinum Jubilee Award"
+            class="img-fluid mb-2 awards-item"
+          />
+          <p><strong>Fate Foundation Platinum Jubilee Award</strong></p>
+          <p>Location: Lagos</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- End awards Area -->
+
+    <!-- Start latest-blog Area -->
+    <section class="latest-blog-area section-gap">
+      <div class="container">
+        <div class="row section-title">
+          <h1>KIPITFRESH BLOG</h1>
+          <p>Stay updated with us</p>
+        </div>
+        <div class="row">
+          <div class="col-lg-6">
+            <div class="single-latest-blog">
+              <div class="thumb">
+                <img class="img-fluid" src="img/blog/Medium1.html" alt="" />
+              </div>
+              <ul class="tags">
+                <li><a></a></li>
+                <li><a></a></li>
+              </ul>
+              <a
+                href="../medium.com/included-vc/the-case-for-venture-debt-in-africa-79d263ba54b4.html"
+                target="_blank"
+              >
+                <h4>The Case for Venture Debt in Africa</h4>
+              </a>
+              <p>
+                KipitFresh (Nigeria), and Inspira Farms(South Africa, Kenya,
+                Rwanda, Zimbabwe, Ethiopia, Mozambique, Colombia), Cold Hubs
+                (Nigeria), EcoZen (Kenya, India) are implementing first-mile
+                cold chain storage solutions.
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="single-latest-blog">
+              <div class="thumb">
+                <img class="img-fluid" src="img/blog/JICA.jpg" alt="" />
+              </div>
+              <ul class="tags">
+                <li><a></a></li>
+                <li><a></a></li>
+              </ul>
+              <a
+                href="../www.techinafrica.com/in-nigeria-jica-plans-to-help-speed-up-the-development-of-five-ninja-startups/index.html"
+                target="_blank"
+              >
+                <h4>
+                  In Nigeria, JICA plans to help speed up the development of
+                  five “Ninja” startups
+                </h4>
+              </a>
+              <p>
+                They are a team of energetic young people who aim to lower the
+                amount of post-harvest loss experienced by fruit producers and
+                raise the profit margin for the typical farmer.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End latest-blog Area -->
+
+    <!-- start footer Area -->
+    <footer class="footer-area section-gap">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4 col-md-4 col-sm-6">
+            <div class="single-footer-widget">
+              <h6>Quick links</h6>
+              <ul>
+                <li><a href='index.html'>Home</a></li>
+                <li><a href='about.html'>About</a></li>
+                <li><a href='blog.html'>Blog</a></li>
+                <li><a href='contact.html'>Contact</a></li>
+        
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-4 col-sm-6 social-widget">
+            <div class="single-footer-widget">
+              <h6>Follow Us</h6>
+              <p>Socials</p>
+              <div class="footer-social d-flex align-items-center">
+                <a href="../web.facebook.com/KipitfreshAfricac9ef.html"
+                  ><i class="fa fa-facebook"></i
+                ></a>
+                <a href="../x.com/KIPITFRESH_NG.html"
+                  ><i class="fa fa-twitter"></i
+                ></a>
+                <a href="../www.instagram.com/kipitfreshAfrica/index.html"
+                  ><i class="fa fa-instagram"></i
+                ></a>
+                <a href="../www.linkedin.com/kipitfresh.html"
+                  ><i class="fa fa-linkedin"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-4 col-sm-6">
+            <div class="single-footer-widget">
+              <h6>Newsletter</h6>
+              <p>Stay update with our latest</p>
+              <div class="" id="mc_embed_signup">
+                <form
+                  target="_blank"
+                  action="https://spondonit.us12.list-manage.com/subscribe/post?u=1462626880ade1ac87bd9c93a&amp;id=92a4423d01"
+                  method="get"
+                  class="form-inline"
+                >
+                  <input
+                    class="form-control"
+                    name="EMAIL"
+                    placeholder="Enter Email"
+                    onfocus="this.placeholder = ''"
+                    onblur="this.placeholder = 'Enter Email '"
+                    required=""
+                    type="email"
+                  />
+                  <button class="click-btn btn btn-default">
+                    <span class="lnr lnr-arrow-right"></span>
+                  </button>
+                  <div style="position: absolute; left: -5000px">
+                    <input
+                      name="b_36c4fd991d266f23781ded980_aefe40901a"
+                      tabindex="-1"
+                      value=""
+                      type="text"
+                    />
+                  </div>
+
+                  <div class="info"></div>
+                </form>
+              </div>
+            </div>
+          </div>
+          <p class="mt-80 mx-auto footer-text col-lg-12">
+            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+            Copyright &copy;
+            <script>
+              document.write(new Date().getFullYear());
+            </script>
+            All rights reserved @ 2023| This template is made with
+            <i class="fa fa-heart-o" aria-hidden="true"></i> by
+            <a href="../colorlib.com/index.html" target="_blank">Colorlib</a>
+            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+          </p>
+        </div>
+      </div>
+      <img class="footer-bottom" src="#" alt="" />
+    </footer>
+    <!-- End footer Area -->
+    <!-- WhatsApp Button -->
+											
+							
+<a href="https://wa.me/+2349083198103" target="_blank" id="whatsapp-button">
+  
+</a>
+
+
+    <script src="js/vendor/jquery-2.2.4.min.js"></script>
+    <script
+      src="../cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/vendor/bootstrap.min.js"></script>
+    <script src="../maps.googleapis.com/maps/api/js9903?key=AIzaSyBhOdIF3Y9382fqJYt5I_sswSrEw5eihAA"></script>
+    <script src="js/easing.min.js"></script>
+    <script src="js/hoverIntent.js"></script>
+    <script src="js/superfish.min.js"></script>
+    <script src="js/jquery.ajaxchimp.min.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/jquery-ui.js"></script>
+    <script src="js/jquery.nice-select.min.js"></script>
+    <script src="js/mail-script.js"></script>
+    <script src="js/main.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Your custom JavaScript code -->
+    <script>
+      document.getElementById('fruit-form').addEventListener('submit', function(e) {
+        e.preventDefault();
+      
+        const fruit = document.querySelector('.fruit-select select').value;
+        const quantity = parseInt(document.querySelector('.quantity-select select').value);
+        const destination = document.querySelector('.destination-select select').value;
+      
+  // Clear previous error messages
+  document.querySelectorAll('.error-message').forEach(el => el.remove());
+
+  // Validation
+  let isValid = true;
+  if (!fruit) {
+    showError('.fruit-select', 'Please select a fruit.');
+    isValid = false;
+  }
+  if (!quantity) {
+    showError('.quantity-select', 'Please select a quantity.');
+    isValid = false;
+  }
+  if (!destination) {
+    showError('.destination-select', 'Please select a destination.');
+    isValid = false;
+  }
+
+  if (!isValid) return;
+
+        // Demo rates
+        const rates = {
+          1: 10000, // Pineapples
+          2: 15000, // Avocadoes
+          3: 12000  // Plantain
+        };
+      
+        const transportationRates = {
+          1: 50000, // Lagos
+          2: 40000, // Ogun
+          3: 60000  // Abuja
+        };
+      
+        const pricePerTon = rates[fruit];
+        const totalPrice = pricePerTon * quantity;
+        const transportation = transportationRates[destination];
+        const finalTotalPrice = totalPrice + transportation;
+      
+        // Display results
+        document.getElementById('price-per-ton').innerHTML = `Price per ton: ₦${pricePerTon}`;
+        document.getElementById('total-price').innerHTML = `Total price: ₦${totalPrice}`;
+        document.getElementById('transportation').innerHTML = `Transportation: ₦${transportation}`;
+        document.getElementById('final-total-price').innerHTML = `Total price: ₦${finalTotalPrice}`;
+        // Show result container and hide the form
+        document.getElementById('fruit-form').style.display = 'none';
+        document.getElementById('result-container').style.display = 'block';
+      });
+      
+      document.getElementById('recalculate-btn').addEventListener('click', function() {
+        // Hide result container and show the form
+        document.getElementById('fruit-form').reset();
+        document.getElementById('fruit-form').style.display = 'block';
+        document.getElementById('result-container').style.display = 'none';
+      });
+
+      function showError(selector, message) {
+        const element = document.querySelector(selector);
+        const error = document.createElement('div');
+        error.className = 'error-message';
+        error.style.color = 'red';
+        error.textContent = message;
+        element.appendChild(error);
+      }
+      
+    
+    
+  </script>
+  </body>
+
+
+</html>
