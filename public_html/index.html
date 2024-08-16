@@ -6,7 +6,7 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <!-- Favicon-->
-    <link rel="icon" href="img/LOGO.svg" type="image/svg+xml">
+    <link rel="icon" href="img/LOGO.svg" type="image/svg+xml" />
     <!-- Author Meta -->
     <meta name="author" content="colorlib" />
     <!-- Meta Description -->
@@ -41,7 +41,10 @@
         text-transform: uppercase; /* Makes text clearer and more prominent */
         letter-spacing: 0.5px; /* Adds spacing between letters for better readability */
       }
-      
+      .nav-menu a:hover {
+        color: #7ed957; /* Color change on hover for better UX */
+      }
+
       /* Ensure the carousel maintains a fixed height */
       .carousel-inner {
         height: 500px; /* Adjust the height as needed */
@@ -73,13 +76,10 @@
         border-radius: 8px; /* Optional: Rounded corners for images */
         margin-bottom: 10px; /* Space below images */
       }
-	  .section-awards strong {
-		font-size: 18px;
-		color: #173e1f;
-
-		
-
-	  }
+      .section-awards strong {
+        font-size: 18px;
+        color: #173e1f;
+      }
 
       .section-supported {
         padding: 20px;
@@ -96,18 +96,20 @@
   <body>
     <header id="header">
       <div class="header-top">
-        <a id='logo-link' href="index.html"><img id='logo-img' src="img/LOGO.svg" alt="" title="" /></a>
+        <a id="logo-link" href="index.html"
+          ><img id="logo-img" src="img/LOGO.svg" alt="" title=""
+        /></a>
       </div>
       <div class="container main-menu">
         <div class="row align-items-center justify-content-between d-flex">
           <nav id="nav-menu-container">
             <ul class="nav-menu">
-              <li ><a  class="active" href="index.html">Home</a></li>
+              <li><a class="active" href="index.html">Home</a></li>
               <li><a href="about.html">About</a></li>
               <li>
                 <a href="blog-home.html">Blog</a>
               </li>
-              <li><a href="contact.html">Contact Us</a></li>
+              <li><a href="contact.html">Contact Us</a></li><li><a href="https://f48f36-e7.myshopify.com/products/pineapples" target="_blank">Fruit Shop</a></li>
             </ul>
           </nav>
           <!-- #nav-menu-container -->
@@ -124,9 +126,8 @@
           class="row fullscreen d-flex align-items-center justify-content-between"
         >
           <div class="banner-content col-lg-6 col-md-6">
-            
             <h3 class="text-white">I need fresh fruits!</h3>
-            <h2 >
+            <h2>
               Zero Wastage<br />
               Zero Sorting Time<br />
               Zero Carbon Emissions<br />
@@ -135,8 +136,6 @@
               Place your orders for fruits directly from the farms to your
               doorstep.
             </h3>
-
-            
           </div>
           <div class="col-lg-4 col-md-6 header-right">
             <h4 class="pb-30">Check out our prices</h4>
@@ -175,7 +174,10 @@
               </div>
 
               <div class="form-group">
-                <div class="default-select destination-select" id="default-select">
+                <div
+                  class="default-select destination-select"
+                  id="default-select"
+                >
                   <select>
                     <option value="" disabled selected hidden>
                       To Destination
@@ -203,19 +205,22 @@
               </div>
               <div class="form-group">
                 <button
-                type="submit"
+                  type="submit"
                   class="btn btn-default btn-lg btn-block text-center text-uppercase"
                 >
                   SUBMIT
                 </button>
               </div>
             </form>
-            <div id="result-container" style="display: none;">
+            <div id="result-container" style="display: none">
               <p class="calculator-output" id="price-per-ton"></p>
               <p class="calculator-output" id="total-price"></p>
               <p class="calculator-output" id="transportation"></p>
               <p class="calculator-output" id="final-total-price"></p>
-              <button id="recalculate-btn" class="btn btn-default btn-lg btn-block text-center text-uppercase">
+              <button
+                id="recalculate-btn"
+                class="btn btn-default btn-lg btn-block text-center text-uppercase"
+              >
                 CALCULATE AGAIN
               </button>
             </div>
@@ -291,86 +296,51 @@
           <h1>KIPITFRESH IN MOTION</h1>
           <p>Together, we can reduce post-harvest loss of fruits</p>
         </div>
-        <div
-          id="carouselExampleIndicators"
-          class="carousel slide"
-          data-ride="carousel"
-        >
-          <ol class="carousel-indicators">
-            <li
-              data-target="#carouselExampleIndicators"
-              data-slide-to="0"
-              class="active"
-            ></li>
-            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-            <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
-            <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
-            <li data-target="#carouselExampleIndicators" data-slide-to="5"></li>
-          </ol>
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <img
-                class="d-block w-100 img-fluid"
-                src="img/KIPITFRESHINMOTION/Mobile_reefer4.png"
-                alt="First slide"
-              />
-            </div>
-            <div class="carousel-item">
-              <img
-                class="d-block w-100 img-fluid"
-                src="img/KIPITFRESHINMOTION/Pineapples.jpg"
-                alt="Second slide"
-              />
-            </div>
-            <div class="carousel-item">
-              <img
-                class="d-block w-100 img-fluid"
-                src="img/KIPITFRESHINMOTION/kipitfreshsolartruck2.jpeg"
-                alt="Third slide"
-              />
-            </div>
-            <div class="carousel-item">
-              <img
-                class="d-block w-100 img-fluid"
-                src="img/KIPITFRESHINMOTION/Avocado.jpg"
-                alt="Fourth slide"
-              />
-            </div>
-            <div class="carousel-item">
-              <img
-                class="d-block w-100 img-fluid"
-                src="img/KIPITFRESHINMOTION/Fruitcrates.jpg"
-                alt="Fifth slide"
-              />
-            </div>
-            <div class="carousel-item">
-              <img
-                class="d-block w-100 img-fluid"
-                src="img/KIPITFRESHINMOTION/plantain.jpg"
-                alt="Sixth slide"
-              />
-            </div>
+        <div class="in-motion-grid-container">
+          <div class="in-motion-grid-item">
+            <img
+              class="in-motion-img"
+              src="img/KIPITFRESHINMOTION/Mobile_reefer4.png"
+              alt="First slide"
+            />
           </div>
-          <a
-            class="carousel-control-prev"
-            href="#carouselExampleIndicators"
-            role="button"
-            data-slide="prev"
-          >
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="sr-only">Previous</span>
-          </a>
-          <a
-            class="carousel-control-next"
-            href="#carouselExampleIndicators"
-            role="button"
-            data-slide="next"
-          >
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="sr-only">Next</span>
-          </a>
+          <div class="in-motion-grid-item">
+            <img
+              class="in-motion-img"
+              src="img/KIPITFRESHINMOTION/Pineapples.jpg"
+              alt="Second slide"
+            />
+          </div>
+          <div class="in-motion-grid-item">
+            <img
+              class="in-motion-img"
+              src="img/KIPITFRESHINMOTION/kipitfreshsolartruck2.jpeg"
+              alt="Third slide"
+            />
+          </div>
+          <div class="in-motion-grid-item">
+            <img
+              class="in-motion-img"
+              src="img/KIPITFRESHINMOTION/Avocado.jpg"
+              alt="Fourth slide"
+            />
+          </div>
+          <div class="in-motion-grid-item">
+            <img
+              class="in-motion-img"
+              src="img/KIPITFRESHINMOTION/Fruitcrates.jpg"
+              alt="Fifth slide"
+            />
+          </div>
+          <div class="in-motion-grid-item">
+            <img
+              class="in-motion-img"
+              src="img/KIPITFRESHINMOTION/plantain.jpg"
+              alt="Sixth slide"
+            />
+          </div>
         </div>
+        
       </div>
     </section>
     <!-- End image-gallery Area -->
@@ -378,71 +348,69 @@
     <!-- Start reviews Area -->
     <section class="reviews-area section-gap">
       <div class="container">
-        <div class="row section-title">
+        <div class="row section-title-mini">
           <h1>SUPPORTED BY</h1>
           <p>We deeply appreciate everyone that has been supportive</p>
         </div>
-        <div class="row">
-          <div class="col-lg-4 col-md-6">
-            <div class="single-review">
-              <a class="img-gal"
-                ><img
-                  class="img-fluid"
-                  src="img/Partners/rockefellerfoundation.png"
-                  alt=""
-              /></a>
-            </div>
+        <div class="supported-by-img-container">
+        <div class="supported-by-img-gal">
+
+          <div class="single-img-gal"><a class="img-gal"
+            ><img class="supported-by-img" src="img/Partners/rockefellerfoundation.png" alt=""
+          /></a></div>
+
+          <div class="single-img-gal"><a class="img-gal"
+            ><img class="supported-by-img" src="img/Partners/OCN2.png" alt=""
+          /></a></div>
+
+          <div class="single-img-gal"><a class="img-gal"
+            ><img class="supported-by-img" src="img/Partners/LSETF.png" alt=""
+          /></a></div>
+          <div class="single-img-gal"><a class="img-gal"
+          ><img class="supported-by-img" src="img/Partners/FATEFOUNDATION.png" alt=""
+        /></a>
           </div>
-          <div class="col-lg-4 col-md-6">
-            <div class="single-review">
-              <a class="img-gal"
-                ><img id='focused-img' class="img-fluid" src="img/Partners/USADF.png" alt=""
-              /></a>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6">
-            <div class="single-review">
-              <a class="img-gal"
-                ><img class="img-fluid" src="img/Partners/OCN2.png" alt=""
-              /></a>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6">
-            <div class="single-review">
-              <div class="single-review">
-                <a class="img-gal"
-                  ><img class="img-fluid" src="img/Partners/LSETF.png" alt=""
-                /></a>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6">
-            <div class="single-review">
-              <a class="img-gal"
-                ><img
-                  class="img-fluid"
-                  src="img/Partners/FATEFOUNDATION.png"
-                  alt=""
-              /></a>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6">
-            <div class="single-review">
-              <a class="img-gal"
-                ><img class="img-fluid" src="img/Partners/JICA.png" alt=""
-              /></a>
-            </div>
-          </div>
+
         </div>
+      
+
+        
+        <a class="img-gal"
+        ><img id="focused-img" class="supported-by-img" src="img/Partners/USADF.png" alt=""
+      /></a>
+    
+
+      
+      <div class="supported-by-img-gal">
+
+
+          <div class="single-img-gal"><a class="img-gal"
+            ><img class="supported-by-img" src="img/Partners/JICA.png" alt=""
+          /></a></div>
+
+          <div class="single-img-gal"><a class="img-gal"
+            ><img class="supported-by-img" src="img/Partners/bill-foundation.png" alt=""
+          /></a></div>
+
+          <div class="single-img-gal"><a class="img-gal"
+            ><img class="supported-by-img" src="img/Partners/co-creation-hub.png" alt=""
+          /></a></div>
+
+          <div class="single-img-gal"><a class="img-gal"
+            ><img class="supported-by-img" src="img/Partners/venture-park.png" alt=""
+          /></a></div>
+        </div>
+      </div>
+    </div>
       </div>
     </section>
     <!-- End reviews Area -->
+
 
     <!-- Start awards Area -->
     <div class="container my-5 section-awards">
       <h1 class="text-center mb-4">AWARDS & RECOGNITIONS</h1>
       <div class="row">
-        
         <div class="col-md-4 text-center mb-4">
           <img
             src="img/world-lpg-challenge-logo.jpeg"
@@ -452,15 +420,15 @@
           <p><strong>World LPG Challenge'24 Award</strong></p>
           <p>Location: Rome</p>
         </div>
-		<div class="col-md-4 text-center mb-4">
-			<img
-			  src="img/cop28-logo.jpeg"
-			  alt="COP28 Energy Efficiency Changemaker Award"
-			  class="img-fluid mb-2 awards-item"
-			/>
-			<p><strong>COP28 Energy Efficiency Changemaker Award</strong></p>
-			<p>Location: Dubai</p>
-		  </div>
+        <div class="col-md-4 text-center mb-4">
+          <img
+            src="img/cop28-logo.jpeg"
+            alt="COP28 Energy Efficiency Changemaker Award"
+            class="img-fluid mb-2 awards-item"
+          />
+          <p><strong>COP28 Energy Efficiency Changemaker Award</strong></p>
+          <p>Location: Dubai</p>
+        </div>
         <div class="col-md-4 text-center mb-4">
           <img
             src="img/fate-foundation-logo.jpg"
@@ -544,11 +512,10 @@
             <div class="single-footer-widget">
               <h6>Quick links</h6>
               <ul>
-                <li><a href='index.html'>Home</a></li>
-                <li><a href='about.html'>About</a></li>
-                <li><a href='blog.html'>Blog</a></li>
-                <li><a href='contact.html'>Contact</a></li>
-        
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contact.html">Contact</a></li>
               </ul>
             </div>
           </div>
@@ -557,16 +524,16 @@
               <h6>Follow Us</h6>
               <p>Socials</p>
               <div class="footer-social d-flex align-items-center">
-                <a href="../web.facebook.com/KipitfreshAfricac9ef.html"
+                <a href="https:///web.facebook.com/KipitfreshAfricac9ef"
                   ><i class="fa fa-facebook"></i
                 ></a>
-                <a href="../x.com/KIPITFRESH_NG.html"
+                <a href="https://x.com/KIPITFRESH_NG"
                   ><i class="fa fa-twitter"></i
                 ></a>
-                <a href="../www.instagram.com/kipitfreshAfrica/index.html"
+                <a href="https://www.instagram.com/kipitfreshAfrica/"
                   ><i class="fa fa-instagram"></i
                 ></a>
-                <a href="../www.linkedin.com/kipitfresh.html"
+                <a href="https://www.linkedin.com/kipitfresh"
                   ><i class="fa fa-linkedin"></i
                 ></a>
               </div>
@@ -626,12 +593,9 @@
     </footer>
     <!-- End footer Area -->
     <!-- WhatsApp Button -->
-											
-							
-<a href="https://wa.me/+2349083198103" target="_blank" id="whatsapp-button">
-  
-</a>
 
+    <a href="https://wa.me/+2349083198103" target="_blank" id="whatsapp-button">
+    </a>
 
     <script src="js/vendor/jquery-2.2.4.min.js"></script>
     <script
@@ -658,81 +622,94 @@
 
     <!-- Your custom JavaScript code -->
     <script>
-      document.getElementById('fruit-form').addEventListener('submit', function(e) {
-        e.preventDefault();
-      
-        const fruit = document.querySelector('.fruit-select select').value;
-        const quantity = parseInt(document.querySelector('.quantity-select select').value);
-        const destination = document.querySelector('.destination-select select').value;
-      
-  // Clear previous error messages
-  document.querySelectorAll('.error-message').forEach(el => el.remove());
+      document
+        .getElementById("fruit-form")
+        .addEventListener("submit", function (e) {
+          e.preventDefault();
 
-  // Validation
-  let isValid = true;
-  if (!fruit) {
-    showError('.fruit-select', 'Please select a fruit.');
-    isValid = false;
-  }
-  if (!quantity) {
-    showError('.quantity-select', 'Please select a quantity.');
-    isValid = false;
-  }
-  if (!destination) {
-    showError('.destination-select', 'Please select a destination.');
-    isValid = false;
-  }
+          const fruit = document.querySelector(".fruit-select select").value;
+          const quantity = parseInt(
+            document.querySelector(".quantity-select select").value
+          );
+          const destination = document.querySelector(
+            ".destination-select select"
+          ).value;
 
-  if (!isValid) return;
+          // Clear previous error messages
+          document
+            .querySelectorAll(".error-message")
+            .forEach((el) => el.remove());
 
-        // Demo rates
-        const rates = {
-          1: 10000, // Pineapples
-          2: 15000, // Avocadoes
-          3: 12000  // Plantain
-        };
-      
-        const transportationRates = {
-          1: 50000, // Lagos
-          2: 40000, // Ogun
-          3: 60000  // Abuja
-        };
-      
-        const pricePerTon = rates[fruit];
-        const totalPrice = pricePerTon * quantity;
-        const transportation = transportationRates[destination];
-        const finalTotalPrice = totalPrice + transportation;
-      
-        // Display results
-        document.getElementById('price-per-ton').innerHTML = `Price per ton: ₦${pricePerTon}`;
-        document.getElementById('total-price').innerHTML = `Total price for all: ₦${totalPrice}`;
-        document.getElementById('transportation').innerHTML = `Transportation: ₦${transportation}`;
-        document.getElementById('final-total-price').innerHTML = `Total price: ₦${finalTotalPrice}`;
-        // Show result container and hide the form
-        document.getElementById('fruit-form').style.display = 'none';
-        document.getElementById('result-container').style.display = 'block';
-      });
-      
-      document.getElementById('recalculate-btn').addEventListener('click', function() {
-        // Hide result container and show the form
-        document.getElementById('fruit-form').reset();
-        document.getElementById('fruit-form').style.display = 'block';
-        document.getElementById('result-container').style.display = 'none';
-      });
+          // Validation
+          let isValid = true;
+          if (!fruit) {
+            showError(".fruit-select", "Please select a fruit.");
+            isValid = false;
+          }
+          if (!quantity) {
+            showError(".quantity-select", "Please select a quantity.");
+            isValid = false;
+          }
+          if (!destination) {
+            showError(".destination-select", "Please select a destination.");
+            isValid = false;
+          }
+
+          if (!isValid) return;
+
+          // Demo rates
+          const rates = {
+            1: 10000, // Pineapples
+            2: 15000, // Avocadoes
+            3: 12000, // Plantain
+          };
+
+          const transportationRates = {
+            1: 50000, // Lagos
+            2: 40000, // Ogun
+            3: 60000, // Abuja
+          };
+
+          const pricePerTon = rates[fruit];
+          const totalPrice = pricePerTon * quantity;
+          const transportation = transportationRates[destination];
+          const finalTotalPrice = totalPrice + transportation;
+
+          // Display results
+          document.getElementById(
+            "price-per-ton"
+          ).innerHTML = `Price per ton: ₦${pricePerTon}`;
+          document.getElementById(
+            "total-price"
+          ).innerHTML = `Total price for all: ₦${totalPrice}`;
+          document.getElementById(
+            "transportation"
+          ).innerHTML = `Transportation: ₦${transportation}`;
+          document.getElementById(
+            "final-total-price"
+          ).innerHTML = `Total price: ₦${finalTotalPrice}`;
+          // Show result container and hide the form
+          document.getElementById("fruit-form").style.display = "none";
+          document.getElementById("result-container").style.display = "block";
+        });
+
+      document
+        .getElementById("recalculate-btn")
+        .addEventListener("click", function () {
+          // Hide result container and show the form
+          document.getElementById("fruit-form").reset();
+          document.getElementById("fruit-form").style.display = "block";
+          document.getElementById("result-container").style.display = "none";
+        });
 
       function showError(selector, message) {
         const element = document.querySelector(selector);
-        const error = document.createElement('div');
-        error.className = 'error-message';
-        error.style.color = 'red';
+        const error = document.createElement("div");
+        error.className = "error-message";
+        error.style.color = "red";
         error.textContent = message;
         element.appendChild(error);
       }
-      
-    
-    
-  </script>
+    </script>
   </body>
-
-
 </html>

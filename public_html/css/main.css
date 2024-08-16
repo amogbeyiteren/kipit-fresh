@@ -2462,13 +2462,21 @@ body.mobile-nav-active #mobile-nav-toggle {
   margin-bottom: 80px;
 }
 
-.section-title h1 {
+.section-title-mini {
+  text-align: center;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 40px;
+}
+
+.section-title h1, .section-title-mini h1 {
   margin-bottom: 10px;
 }
 
 /*-------- Start Banner Area ------------*/
 .home-banner {
-  background: url(../img/header3-bg.jpeg) center;
+  background: url(../img/header1-bg.jpg) center;
   background-size: cover;
   min-height: 100vh !important;
 
@@ -2775,54 +2783,85 @@ body.mobile-nav-active #mobile-nav-toggle {
   background-color: #f9f9ff;
 }
 
-.image-gallery-area .single-gallery:nth-child(2) {
-  margin-top: 80px;
+.in-motion-grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+  padding: 20px;
 }
 
-@media (max-width: 1024px) {
-  .image-gallery-area .single-gallery:nth-child(2) {
-    margin-top: 0px;
-  }
+.in-motion-grid-item {
+  position: relative;
+  overflow: hidden;
 }
 
-.image-gallery-area .single-gallery img {
+.in-motion-img {
   width: 100%;
-  margin-bottom: 30px;
-  -webkit-transition: all 0.3s ease 0s;
-  -moz-transition: all 0.3s ease 0s;
-  -o-transition: all 0.3s ease 0s;
-  transition: all 0.3s ease 0s;
+  height: 300px; /* Fixed height */
+  object-fit: cover;
+  display: block;
 }
 
-.image-gallery-area .single-gallery a:hover img {
-  opacity: .6;
-}
 
 /*-------- End image-gallery Area -------------*/
 /*-------- Start review Area -------------*/
-
-
-.reviews-area .single-review {
-  text-align: center;
-  padding: 30px;
-  margin-bottom: 30px;
-  -webkit-transition: all 0.3s ease 0s;
-  -moz-transition: all 0.3s ease 0s;
-  -o-transition: all 0.3s ease 0s;
-  transition: all 0.3s ease 0s;
+.supported-by-img-container{
+  width: 100%;
   display: flex;
-  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  column-gap: 30px;
+  align-items: center;
+  flex-direction: row;
+}
+@media (max-width: 576px) {
+  .supported-by-img-container {
+    flex-direction: column;
+  }
+}
+/* .supported-by-img-gal{
+  width: 100%;
+  padding: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  row-gap: 10px;
+  column-gap: 40px;
+  align-items: center;
+
+} */
+.supported-by-img-gal {
+  width: 100%;
+  padding: 10px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px 40px; /* Row gap of 10px and column gap of 40px */
   justify-content: center;
   align-items: center;
 }
-.reviews-area .single-review img {
-  width: 200px;
-  height: 150px;
-  object-fit: contain;
+@media (max-width: 768px) {
+  .supported-by-img-gal {
+    grid-template-columns: repeat(1, 1fr);
+  }
 }
+.single-img-gal{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.supported-by-img {
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+
+ 
+}
+
 #focused-img{
-  width: 250px;
-  height: 250px;
+  width: 150px;
+  height: 150px;
 
 }
 
@@ -3698,6 +3737,35 @@ color: #173e1f;
   font-size: 12px;
   color: #222;
 }
+/* Custom styles for the featured image */
+.featured-img {
+  height: 500px; /* You can adjust this value */
+  object-fit: cover; /* Ensures the image covers the entire area without distorting */
+}
+
+/* Custom styles for buttons if needed */
+.custom-button {
+  background-color: #173e1f;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 50px;
+}
+.card-img-top{
+  height: 300px; /* You can adjust this value */
+  object-fit: cover;
+
+}
+.blog-tag {
+  background-color: #173e1f;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+.custom-button:hover {
+  background-color: #7ED957;
+}
+
 
 /*============ End Blog Home Styles  =============*/
 /*============ Start Blog Single Styles  =============*/
