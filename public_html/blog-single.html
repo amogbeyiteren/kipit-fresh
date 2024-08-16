@@ -7,7 +7,7 @@
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
     <!-- Favicon-->
-    <link rel="icon" href="img/LOGO.svg" type="image/svg+xml">
+    <link rel="icon" href="img/LOGO.svg" type="image/svg+xml" />
     <!-- Author Meta -->
     <meta name="author" content="colorlib" />
     <!-- Meta Description -->
@@ -17,7 +17,7 @@
     <!-- meta character set -->
     <meta charset="UTF-8" />
     <!-- Site Title -->
-    <title>Taxi</title>
+    <title>Blog</title>
 
     <link
       href="https://fonts.googleapis.com/css?family=Poppins:100,200,400,300,500,600,700"
@@ -85,7 +85,14 @@
               <li>
                 <a class="active" href="blog-home.html">Blog</a>
               </li>
-              <li><a href="contact.html">Contact Us</a></li><li><a href="https://f48f36-e7.myshopify.com/products/pineapples" target="_blank">Fruit Shop</a></li>
+              <li><a href="contact.html">Contact Us</a></li>
+              <li>
+                <a
+                  href="https://f48f36-e7.myshopify.com/products/pineapples"
+                  target="_blank"
+                  >Fruit Shop</a
+                >
+              </li>
             </ul>
           </nav>
           <!-- #nav-menu-container -->
@@ -95,36 +102,180 @@
     <!-- #header -->
 
     <!-- start banner Area -->
-    <section class="banner-area relative" id="home">
-      <div class="overlay overlay-bg"></div>
-      <div class="container">
-        <div class="row d-flex align-items-center justify-content-center">
-          <div class="about-content col-lg-12">
-            <h1 class="text-white">Blog Details Page</h1>
-            <p class="text-white link-nav">
-              <a href="index.html">Home </a>
-              <span class="lnr lnr-arrow-right"></span
-              ><a href="blog-home.html">Blog </a>
-              <span class="lnr lnr-arrow-right"></span>
-              <a href="blog-single.html"> Blog Details Page</a>
-            </p>
+    <section class="margin-top"></section>
+    <!-- End banner Area -->
+
+    <!-- Start post-content Area -->
+    <section class="w-100 py-5">
+      <div class="col-12 col-md-6 position-relative search-bar">
+        <input
+          type="text"
+          id="search-input"
+          class="form-control custom-focus"
+          placeholder="Search articles..."
+          oninput="filterCards()"
+        />
+        <button id="search-btn" class="btn btn-search">
+          <i class="fa fa-search"></i>
+        </button>
+      </div>
+      <div class="row px-3 blog-row">
+        <div class="col-12 mb-4 card-container">
+          <div
+            class="card"
+            onclick="window.location.href='blog-single.html';"
+            style="cursor: pointer"
+          >
+            <img
+              class="card-img-top-single"
+              src="img/blog/blog-1.jpg"
+              alt="Understanding Sustainable Agriculture"
+            />
+            <div class="card-body">
+              <span class="text-muted">August 1, 2024</span>
+              <h5 class="card-title">Understanding Sustainable Agriculture</h5>
+              <p class="card-text">
+                Explore the principles and practices of sustainable agriculture
+                and how they impact our environment. Sustainable agriculture
+                focuses on farming methods that maintain the health of the
+                ecosystem, improve soil fertility, and conserve water resources.
+                It emphasizes the use of organic farming techniques, crop
+                rotation, and integrated pest management to reduce the reliance
+                on synthetic chemicals and promote biodiversity. By adopting
+                sustainable practices, farmers can reduce greenhouse gas
+                emissions, enhance the resilience of crops to climate change,
+                and support local economies. This approach not only helps in
+                preserving natural resources for future generations but also
+                fosters a stronger connection between communities and the food
+                they consume. Learn about the latest innovations and success
+                stories in sustainable agriculture and how they are shaping the
+                future of food production.
+              </p>
+              <div>
+                <span class="blog-tag">Agriculture</span>
+                <span class="blog-tag">Sustainability</span>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </section>
-    <!-- End banner Area -->
 
-    <!-- Start post-content Area -->
-    <section class="w-100 py-5 d-flex flex-column justify-content-center align-items-start">
-      <img class="w-100 rounded mb-4" style="height: 500px;" src="featured-image.jpg" alt="Featured Article">
-      <span class="text-muted">Featured Date</span>
-      <h2 class="font-weight-bold">Featured Title</h2>
-      <p class="text-dark">Featured Description</p>
-      <div class="d-flex">
-        <button class="blog-tag">Tag 13</button>
-        <button class="blog-tag">Tag 14</button>
+    <section class="container-fluid py-5">
+      <div class="row justify-content-between align-items-center mb-4 px-3">
+        <h3>Related Stories...</h3>
+        <button
+          class="blog-button"
+          onclick="window.location.href='blog-home.html';"
+        >
+          See all posts
+        </button>
       </div>
-      </section>
+      <div class="row blog-row">
+        <div class="col-12 col-sm-6 col-lg-3 mb-4 card-container">
+          <div
+            class="card"
+            onclick="window.location.href='blog-single.html';"
+            style="cursor: pointer"
+          >
+            <img
+              class="card-img-top"
+              src="img/blog/blog-3.jpg"
+              alt="Innovations in Urban Farming"
+            />
+            <div class="card-body">
+              <span class="text-muted">July 22, 2024</span>
+              <h5 class="card-title">Innovations in Urban Farming</h5>
+              <p class="card-text">
+                Discover how urban farming is transforming cities and
+                contributing to food sustainability.
+              </p>
+              <div>
+                <span class="blog-tag">Urban Farming</span>
+                <span class="blog-tag">Innovation</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-lg-3 mb-4 card-container">
+          <div
+            class="card"
+            onclick="window.location.href='blog-single.html';"
+            style="cursor: pointer"
+          >
+            <img
+              class="card-img-top"
+              src="img/blog/blog-4.jpg"
+              alt="Climate Change and Agriculture"
+            />
+            <div class="card-body">
+              <span class="text-muted">July 15, 2024</span>
+              <h5 class="card-title">Climate Change and Agriculture</h5>
+              <p class="card-text">
+                Learn about the effects of climate change on agriculture and
+                what can be done to mitigate them.
+              </p>
+              <div>
+                <span class="blog-tag">Climate Change</span>
+                <span class="blog-tag">Agriculture</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-lg-3 mb-4 card-container">
+          <div
+            class="card"
+            onclick="window.location.href='blog-single.html';"
+            style="cursor: pointer"
+          >
+            <img
+              class="card-img-top"
+              src="img/blog/blog-5.jpg"
+              alt="Advances in Agricultural Technology"
+            />
+            <div class="card-body">
+              <span class="text-muted">July 10, 2024</span>
+              <h5 class="card-title">Advances in Agricultural Technology</h5>
+              <p class="card-text">
+                A closer look at the latest technologies that are
+                revolutionizing the agricultural sector.
+              </p>
+              <div>
+                <span class="blog-tag">Technology</span>
+                <span class="blog-tag">Agriculture</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-lg-3 mb-4 card-container">
+          <div
+            class="card"
+            onclick="window.location.href='blog-single.html';"
+            style="cursor: pointer"
+          >
+            <img
+              class="card-img-top"
+              src="img/blog/blog-6.jpg"
+              alt="The Role of Genetics in Crop Improvement"
+            />
+            <div class="card-body">
+              <span class="text-muted">July 5, 2024</span>
+              <h5 class="card-title">
+                The Role of Genetics in Crop Improvement
+              </h5>
+              <p class="card-text">
+                Explore how genetic research is leading to better crop varieties
+                and improved food production.
+              </p>
+              <div>
+                <span class="blog-tag">Genetics</span>
+                <span class="blog-tag">Crop Improvement</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
     <!-- End post-content Area -->
 
     <!-- start footer Area -->
@@ -237,5 +388,39 @@
     <script src="js/jquery.nice-select.min.js"></script>
     <script src="js/mail-script.js"></script>
     <script src="js/main.js"></script>
+    <script>
+      function filterCards() {
+        const searchValue = document
+          .getElementById("search-input")
+          .value.toLowerCase();
+        const cards = document.querySelectorAll(".card-container"); // Select all cards on the page
+
+        cards.forEach((card) => {
+          const title = card
+            .querySelector(".card-title")
+            .textContent.toLowerCase();
+          const description = card
+            .querySelector(".card-text")
+            .textContent.toLowerCase();
+          const tags = Array.from(card.querySelectorAll(".blog-tag")).map(
+            (tag) => tag.textContent.toLowerCase()
+          );
+
+          if (
+            title.includes(searchValue) ||
+            description.includes(searchValue) ||
+            tags.some((tag) => tag.includes(searchValue))
+          ) {
+            card.style.display = "block";
+          } else {
+            card.style.display = "none";
+          }
+        });
+      }
+
+      document
+        .getElementById("search-btn")
+        .addEventListener("click", filterCards);
+    </script>
   </body>
 </html>
