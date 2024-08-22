@@ -2476,7 +2476,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 /*-------- Start Banner Area ------------*/
 .home-banner {
-  background: url(../img/header1-bg.jpg) center;
+  background: url(../img/blog/blog-home-banner.jpg) center;
   background-size: cover;
   min-height: 100vh !important;
 
