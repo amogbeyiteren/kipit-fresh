@@ -2185,7 +2185,7 @@ h1, h2, h3, h4, h5, h6 {
   content: "\f107";
   position: absolute;
   right: 15px;
-  font-family: FontAwesome;
+  font-family: "Poppins";
   font-style: normal;
   font-weight: normal;
 }
@@ -3088,7 +3088,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 .timeline-container{
-  font-family:poppins;
+  font-family:"Poppins";
   display: flex;
   flex-wrap: wrap;
   max-width: 1000px;
