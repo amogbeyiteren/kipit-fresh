@@ -2164,6 +2164,18 @@ h1, h2, h3, h4, h5, h6 {
   min-width: 180px;
 }
 
+.nav-menu a {
+  font-size: 18px; /* Adjust font size as needed */
+  font-weight: 700; /* Makes the font bolder */
+  text-transform: uppercase; /* Makes text clearer and more prominent */
+  letter-spacing: 0.5px; /* Adds spacing between letters for better readability */
+}
+.nav-menu a:hover {
+  color: #7ed957; /* Color change on hover for better UX */
+}
+
+
+
 /* Nav Menu Arrows */
 .sf-arrows .sf-with-ul {
   padding-right: 30px;
@@ -2762,7 +2774,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 .services-area .single-service:hover {
   background-color: #7ED957;
-  pointer: cursor;
+  cursor: pointer;
 }
 
 .services-area .single-service:hover h4,
@@ -2864,6 +2876,29 @@ body.mobile-nav-active #mobile-nav-toggle {
   height: 150px;
 
 }
+/* Styles for the awards and supported by sections */
+.section-awards img,
+.section-supported .supported-by-item img {
+  width: 250px; /* Fixed width for consistency */
+  height: 180px; /* Fixed height to match width */
+  object-fit: contain; /* Adjust to cover or contain based on design preference */
+  border-radius: 8px; /* Optional: Rounded corners for images */
+  margin-bottom: 10px; /* Space below images */
+}
+.section-awards strong {
+  font-size: 18px;
+  color: #173e1f;
+}
+
+.section-supported {
+  padding: 20px;
+  background-color: #f9f9f9; /* Light background for contrast */
+}
+
+.section-supported .supported-by-item {
+  text-align: center;
+  margin-bottom: 20px;
+}
 
 
 
@@ -2872,7 +2907,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 .reviews-area .single-review .star .checked {
-  color: orange;
+  color: #7ED957;
 }
 
 .reviews-area .single-review:hover {
